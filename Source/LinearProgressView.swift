@@ -11,7 +11,7 @@ import UIKit
 @IBDesignable
 open class LinearProgressView: UIView {
     
-    open let trackView = UIView()
+    public let trackView = UIView()
     open lazy var trackViewWidthConstraint: NSLayoutConstraint =  { NSLayoutConstraint(item: self.trackView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 0) }()
 
     @IBInspectable
